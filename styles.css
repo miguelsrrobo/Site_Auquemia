@@ -1,0 +1,165 @@
+/* Global ================== */
+:root {
+  --dark-purple: #6B2B68;
+  --green: #7BC7A4;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body ======================================= */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: var(--white);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* header ====================================== */
+
+header {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+
+nav {
+  width: 40%;
+  height: 10%;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
+
+#logo {
+  width: 200px;
+  height: 100px 
+}
+
+/* Main ======================================== */
+a {
+  color: var(--dark-purple);
+  text-decoration: none;
+  padding: 1;
+  font-size: 25px;
+}
+ 
+.sessao.imagens_animal {
+  display: block;
+  width: 1200px;
+  height: 500px;
+
+  overflow: auto;
+}
+
+.Imagens_pessoa {
+  border-radius: 1rem;
+  /* border: 2px var(--dark-purple) solid; */
+  width: 90.65px;
+  height: 137px;
+}
+
+.card {
+  background: gainsboro;
+  padding: 1.5rem 2rem;
+
+  margin-bottom: 2rem;
+  margin-left: 4px;
+  width: 50rem;
+
+  border: 2px var(--dark-purple) solid;
+  border-radius: 2rem;
+  
+  display: flex;
+  align-items: center;
+}
+
+.Text-box {
+  margin-left: 2rem;
+
+  /* border: 2px var(--dark-purple) solid; */
+  /* background: var(--white); */
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-size: 32px;
+  color: var(--dark-purple);
+  text-align: left;
+  padding: 0 0 0 10px;
+  margin-bottom: 8px;
+}
+
+p {
+  color: var(--dark-purple);
+  text-align: left;
+  padding: 0 0 0 10px;
+}
+
+.sessao {
+  /* margin-top: 2rem; */
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sobre{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  width: 50rem;
+
+  border: 2px var(--dark-purple) solid;
+  background: var(--white);
+  border-radius: 1rem;
+}
+
+#sobre p {
+  text-align: left;
+  margin: 2rem;
+  margin-bottom: 5rem;
+}
+
+#sobre img {
+  width: 400px;
+  height: 250px;
+  margin-top: 3rem;
+}
+
+/* Footer ====================================== */
+h2 {
+  color: var(--dark-purple);
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive ================================== */
+@media(min-width: 800px) {
+
+}
