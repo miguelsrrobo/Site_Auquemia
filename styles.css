@@ -32,6 +32,7 @@ body {
 /* header ====================================== */
 
 header {
+  
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -149,7 +150,15 @@ p {
 }
 
 /* Footer ====================================== */
+
+footer {
+  background: var(--dark-purple);
+
+}
+
 h2 {
+  text-align: center;
+  margin-top: 0.8rem;
   color: var(--white);
 }
 
@@ -159,15 +168,19 @@ tbody {
 }
 
 .form {
-  background: var(--dark-purple);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 form {
-  border-radius: 2px var(--white) solid;
+  border-radius: 2rem;
+  border: 2px var(--white) solid;
+  width: 15rem;
 }
 #redes_sociais {
+  border-radius: 2rem;
+  border: 2px var(--white) solid;
+
   margin-top: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -188,8 +201,13 @@ input {
 }
 
 .input-group.avaliacao {
+  display: flex;
   order: 1;
-  align-self: flex-end;
+}
+
+iframe {
+  border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Responsive ================================== */
