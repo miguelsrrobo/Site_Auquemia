@@ -60,13 +60,13 @@ a {
   font-size: 25px;
 }
  
-.sessao.imagens_animal {
-  /* display: block; */
+/* .sessao.imagens_animal {
+  display: block;
   width: 1200px;
   height: 500px;
-
+  
   overflow-x: auto;
-}
+} */
 
 .Imagens_pessoa {
   border-radius: 1rem;
@@ -164,7 +164,9 @@ tbody {
   justify-content: center;
   align-items: center;
 }
-
+form {
+  border-radius: 2px var(--white) solid;
+}
 #redes_sociais {
   margin-top: 0.8rem;
   display: flex;
