@@ -61,7 +61,7 @@ a {
 }
  
 .sessao.imagens_animal {
-  display: block;
+  /* display: block; */
   width: 1200px;
   height: 500px;
 
@@ -150,13 +150,44 @@ p {
 
 /* Footer ====================================== */
 h2 {
-  color: var(--dark-purple);
+  color: var(--white);
 }
-#form {
+
+tbody {
   display: flex;
   flex-direction: column;
+}
+
+.form {
+  background: var(--dark-purple);
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#redes_sociais {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
+
+input {
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  width: 100%;
+}
+
+.input-group {
+  margin-top: 0.8rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.input-group.avaliacao {
+  order: 1;
+  align-self: flex-end;
 }
 
 /* Responsive ================================== */

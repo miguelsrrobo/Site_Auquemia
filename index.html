@@ -19,27 +19,27 @@
       <h3 class="sr-only"></h3>
       <a
         onclick=""
-        href="#"
+        href="#home"
         class="button">Home</a>
       <a
         onclick="" 
-        href="#"
+        href="#menbros"
         class="button">Membro</a>
       <a 
         onclick=""
-        href="#"
+        href="#sobre"
         class="button">Sobre</a>
       <a
         onclick="" 
-        href="#"
+        href="#redes_sociais"
         class="button">Contato</a>
     </nav>
   </header>
   <main>
-    <section class="sessao imagens_animal">
+    <section class="sessao imagens_animal" id="home">
       <img src="./assets/bull-terrier_626162966.jpg" alt="imagens de animais">
     </section>
-    <section class="sessao">
+    <section class="sessao" id="menbros">
       <div class="card">
         <img src="assets/doutor-engraçado-próstata-exame-humor-isolado-19026404.jpg" alt="Medico" class="Imagens_pessoa">
         <div class="Text-box">
@@ -83,23 +83,32 @@
     </section>
   </main>
   <footer>
-    <tbody>
-      <div id="form">
-        <h2>Contato</h2>
-        <a href="#" target="_blank">
-          <img 
-              width="32px"
-              height="32px"
-              src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png"
-              alt="Linkedin">
-        </a>
-        <a href="#" target="_blank">
-          <img 
-              width="32px"
-              height="32px" 
-              src="https://github.com/favicon.ico" 
-              alt="guithub">
-        </a>
+    <tbody id="contato">
+      <h2  class="form">Contato</h2>
+      <div class="form">
+        <div id="redes_sociais">
+          <a href="#" target="_blank">
+            <img 
+                width="32px"
+                height="32px"
+                src="https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png"
+                alt="Linkedin">
+          </a>
+          <a href="#" target="_blank">
+            <img 
+                width="32px"
+                height="32px" 
+                src="https://www.facebook.com/favicon.ico" 
+                alt="facebook">
+          </a>
+          <a href="#" target="_blank">
+            <img 
+                width="32px"
+                height="32px" 
+                src="https://web.whatsapp.com/favicon.ico" 
+                alt="whatsapp">
+          </a>
+        </div>
         <form action="">
           <div class="input-group">
             <label 
@@ -134,7 +143,7 @@
               placeholder="Telefone"
             />
           </div>
-          <div class="input-group">
+          <div class="input-group avaliacao">
             <label 
               class="sr-only"
               for="">Avaliação</label>
