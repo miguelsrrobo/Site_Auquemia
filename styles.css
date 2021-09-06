@@ -152,10 +152,10 @@ p {
 
 footer {
   background: var(--dark-purple);
-
+  
 }
 
-h2 {
+footer > h2 {
   text-align: center;
   margin-top: 0.8rem;
   color: var(--white);
@@ -200,9 +200,9 @@ input {
 }
 
 #avaliacao {
-  margin-top: 6px;
+  margin-top: 10px;
   width: 15rem;
-  height: 100px;
+  height: 95px;
 }
 
 #avaliacao > label {
@@ -270,7 +270,7 @@ iframe {
   span {
     font-size: 32px;
     color: var(--dark-purple);
-    text-align: center;
+    text-align: left;
     padding: 0 0 0 10px;
     margin-bottom: 8px;
   }
