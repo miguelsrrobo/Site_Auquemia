@@ -32,7 +32,6 @@ body {
 /* header ====================================== */
 
 header {
-  
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -167,18 +166,18 @@ tbody {
   flex-direction: column;
 }
 
-.form {
+form {
+  margin-right: 2rem;
+}
+
+.formulario {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-form {
-  border-radius: 2rem;
-  border: 2px var(--white) solid;
-  width: 15rem;
-}
+
 #redes_sociais {
-  border-radius: 2rem;
+  border-radius: 1rem;
   border: 2px var(--white) solid;
 
   margin-top: 0.8rem;
@@ -192,17 +191,25 @@ input {
   border-radius: 0.2rem;
   padding: 0.2rem;
   width: 100%;
+  
 }
 
 .input-group {
   margin-top: 0.8rem;
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
+  width: 15rem;
 }
 
-.input-group.avaliacao {
-  display: flex;
-  order: 1;
+#avalia {
+  margin-top: 6px;
+  width: 15rem;
+  height: 20px;
+}
+
+#avaliacao > label {
+  text-align: center;
 }
 
 iframe {
