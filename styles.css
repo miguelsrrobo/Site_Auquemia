@@ -35,7 +35,7 @@ header {
   margin-top: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around
+  justify-content: space-around;
 }
 
 nav {
@@ -53,7 +53,7 @@ nav {
 }
 
 /* Main ======================================== */
-a {
+nav > a {
   color: var(--dark-purple);
   text-decoration: none;
   padding: 1;
@@ -177,9 +177,6 @@ form {
 }
 
 #redes_sociais {
-  border-radius: 1rem;
-  border: 2px var(--white) solid;
-
   margin-top: 0.8rem;
   display: flex;
   flex-direction: column;
@@ -202,10 +199,10 @@ input {
   width: 15rem;
 }
 
-#avalia {
+#avaliacao {
   margin-top: 6px;
   width: 15rem;
-  height: 20px;
+  height: 100px;
 }
 
 #avaliacao > label {
@@ -218,6 +215,129 @@ iframe {
 }
 
 /* Responsive ================================== */
-@media(min-width: 800px) {
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+  header {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 
+  nav {
+    width: 80%;
+    height: 10%;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+  
+  nav > a {
+    color: var(--dark-purple);
+    text-decoration: none;
+    padding: 1;
+    font-size: 20px;
+  }
+
+  .sessao.imagens_animal {
+    display: block;
+    width: 330px;
+    height: 280px;
+    
+    overflow-x: auto;
+  }
+
+  .card {
+    background: gainsboro;
+    padding: 1.5rem 2rem;
+  
+    margin-bottom: 2rem;
+    margin-left: 4px;
+    width: 20rem;
+  
+    border: 2px var(--dark-purple) solid;
+    border-radius: 2rem;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  span {
+    font-size: 32px;
+    color: var(--dark-purple);
+    text-align: center;
+    padding: 0 0 0 10px;
+    margin-bottom: 8px;
+  }
+
+ .sessao {
+    /* margin-top: 2rem; */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #sobre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    width: 20rem;
+  
+    border: 2px var(--dark-purple) solid;
+    background: var(--white);
+    border-radius: 1rem;
+  }
+  
+  #sobre p {
+    text-align: left;
+    margin: 2rem;
+    margin-bottom: 5rem;
+  }
+  
+  #sobre img {
+    width: 180px;
+    height: 125px;
+    margin-top: 3rem;
+  }
+
+  .formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #redes_sociais {
+    margin-top: 0.8rem;
+    margin-right: 10rem;
+  }
+  
+  .input-group {
+    margin-left: 2rem;
+    margin-top: 0.8rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 15rem;
+  }
+
+  #avaliacao {
+    width: 15rem;
+    height: 100px;
+  }
+
+  iframe {
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    width: 20rem;
+    height: 10rem;
+  }
 }
