@@ -31,13 +31,29 @@
         class="button">Sobre</a>
       <a
         onclick="" 
-        href="#redes_sociais"
+        href="#contato"
         class="button">Contato</a>
     </nav>
   </header>
   <main>
     <section class="sessao imagens_animal" id="home">
-      <img src="./assets/bull-terrier_626162966.jpg" width="1200" height="800" alt="imagens de animais">
+      <ul class="slider">
+        <li>
+          <input type="radio" id="slide1" name="slide" checked>
+          <label for="slide1"></label>
+          <img src="./assets/bull-terrier_626162966.jpg" alt="imagens de animais">
+        </li>
+        <li>
+          <input type="radio" id="slide2" name="slide">
+          <label for="slide2"></label>
+          <img src="./assets/índice.jpeg" />
+        </li>
+        <li>
+          <input type="radio" id="slide3" name="slide">
+          <label for="slide3"></label>
+          <img src="./assets/buterrie.jpg" />
+        </li>
+    </ul>
     </section>
     <section class="sessao" id="menbros">
       <div class="card">
@@ -82,8 +98,8 @@
       </div>
     </section>
   </main>
-  <footer>
-    <tbody id="contato">
+  <footer id="contato">
+    <tbody>
       <h2>Contato</h2>
       <div class="formulario">
         <div class="redes_sociais">

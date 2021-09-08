@@ -59,14 +59,28 @@ nav > a {
   padding: 1;
   font-size: 25px;
 }
- 
-/* .sessao.imagens_animal {
+
+
+.slider {
   display: block;
-  width: 1200px;
-  height: 500px;
-  
-  overflow-x: auto;
-} */
+  height: 293px;
+  width: 600px;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+}
+
+.slider li {
+  list-style: none;
+  position: absolute;
+}
+
+.slider img {
+  margin: auto;
+  weight: 100%;
+  width: 100%;
+  vertical-align: top;
+}
 
 .Imagens_pessoa {
   border-radius: 1rem;
@@ -75,10 +89,40 @@ nav > a {
   height: 137px;
 }
 
+.slider input {
+  display: none;
+}
+
+.slider label {
+  background-color: #000;
+  bottom: 10px;
+  cursor: pointer;
+  display: block;
+  height: 10px;
+  position: absolute;
+  width: 10px;
+  z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+  left: 10px;
+}
+
+.slider li:nth-child(2) label {
+  left: 40px;
+}
+
+.slider li:nth-child(3) label {
+  left: 70px;
+}
+
+
+/* Card ============================================ */
 .card {
   background: gainsboro;
   padding: 1.5rem 2rem;
 
+  margin-top: 5rem;
   margin-bottom: 2rem;
   margin-left: 4px;
   width: 50rem;
@@ -143,9 +187,20 @@ p {
 }
 
 #sobre img {
-  width: 400px;
-  height: 250px;
+  width: 200px;
+  height: 150px;
   margin-top: 3rem;
+}
+
+.slider img {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+  opacity: 1;
+  visibility: visible;
+  z-index: 10;
 }
 
 /* Footer ====================================== */
